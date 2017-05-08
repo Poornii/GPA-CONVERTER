@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<script src="gpascript.js"></script>    
+<style>
+
+body {
+	background-image: url("7.jpeg");
+	background-size:1350px 700px;
+	font-size: x-large;
+	color: #000000;
+}
+ 
+ 
+ .r{
+     border:1px solid;
+     background:#999999;
+     height: 20px;
+ }
+ 
+ .rt{
+     border:1px solid;
+     background: #999999;
+     height: 20px;
+ }
+ 
+section{
+    margin: 50px;
+    border: 2px solid;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    background: #CC99FF;
+}
+
+#error{
+    color: red;
+}
+ .style1 {
+	font-style: italic;
+	font-weight: bold;
+}
+.style3 {
+	color: #333333;
+	font-style: italic;
+}
+</style>
+ 
+</head>
+<body>
+<section>
+     
+  <h1 align="center" class="style3">GPA CONVERTER</h1>
+    
+     <form>
+       <div align="center">
+         <input type="text" id="cr" placeholder="Course Code">
+         <br>
+         <input type="number" id="mr" placeholder="Mark">
+         <br>
+         <input type="number" id="ch" placeholder="Credit ">
+         </div>
+     </form>
+     <div align="center">
+       <button class="style1" onClick="addRecord()">Add record</button>
+       <strong><em><br>
+       </em> </strong>
+      </div>
+  <p align="center" id="error">     
+  <p align="center">
+      <div align="center">
+        <table width="150">
+          <tr>
+             <td class="r" id="cn1"></td>
+           <td class="r" id="ch1"></td>        
+           <td class="r" id="cm1"></td>
+           <td class="r" id="gr1"></td>
+           <td class="r" id="gp1"></td>
+           <td class="r" id="tp1"></td>
+       <tr>
+         <td class="rt" id="Scn">Total Marks</td>
+          <td class="rt" id="tcr"></td>
+          <td class="rt" id="t"></td>
+          <td class="rt"></td>
+          <td class="rt"></td>
+          <td class="rt" id="tpo"></td>
+       </tr>
+          <tr>
+             <td class="rt" id="cgpa"></td>
+       </tr>
+            </table>
+  </div>
+
+</section>
+      
+      <div align="center"><strong><em>
+        <script>
+    
+    displayCourses();
+    
+      </script>
+	  </em>
+        </em></strong>
+      </div>
+</body>
+
+</HTML>
